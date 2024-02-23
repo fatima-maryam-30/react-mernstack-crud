@@ -30,6 +30,7 @@ app.use("/students", studentRoute);
 
 // PORT
 const port = 3000;
+const host = "0.0.0.0";
 const server = app.listen(port, host,() => {
   console.log("Connected to port " + port);
 });
