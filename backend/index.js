@@ -29,8 +29,8 @@ app.use(cors());
 app.use("/students", studentRoute);
 
 // PORT
-const port = process.env.PORT || 4000;
-const server = app.listen(port, () => {
+const port = 3000;
+const server = app.listen(port, host,() => {
   console.log("Connected to port " + port);
 });
 
