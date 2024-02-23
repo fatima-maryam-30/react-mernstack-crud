@@ -18,7 +18,7 @@ function CreateStudent() {
   const onSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4000/students/create-student", userForm)
+      .post("https://ed-6496902015221760.educative.run:3000/students/create-student", userForm)
       .then((res) => {
         console.log(res.data);
         setUserForm({
